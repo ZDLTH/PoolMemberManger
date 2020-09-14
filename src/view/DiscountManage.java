@@ -16,8 +16,8 @@ import java.util.List;
 
 
 public class DiscountManage extends JFrame {
-    int width = 600;
-    int height = 500;
+    int width = 1000;
+    int height = 600;
 
     private DefaultTableModel discountTableModel =  new DefaultTableModel(){
         @Override
