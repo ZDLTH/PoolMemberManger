@@ -343,7 +343,7 @@ class AddConsume extends JPanel{
                 Float d = discount.get(item);
                 if(d < 1){
                     d*=10;
-                    chooseDiscount.setText(d.intValue()+"折");
+                    chooseDiscount.setText(d+"折");
                 }
                 else {
                     chooseDiscount.setText("");
@@ -811,7 +811,7 @@ class QueryCharge extends JPanel{
     ChargeService chargeService = new ChargeServiceImpl();
 
     Panel tablePanel = new Panel(new BorderLayout());
-    Object []title = {"充值号", "姓名","手机号", "交易时间" ,"金额"};
+    Object []title = {"充值号", "姓名","手机号","金额","交易时间" };
     private DefaultTableModel chargeTableModel =  new DefaultTableModel();
     private JTable chargeTable = new JTable(){
         @Override

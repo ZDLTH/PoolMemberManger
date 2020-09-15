@@ -392,20 +392,24 @@ public class DiscountManage extends JFrame {
                     Discount g = new Discount();
                     g.setDiscount_Code((String) data.get(0));
                     g.setName((String) data.get(1));
+
+
                     g.setDiscount(Float.parseFloat(data.get(2) + "" ));
 
                     try {
                         discountService.updateDiscount(g);
-                        JOptionPane.showMessageDialog(null, "修改成功");
-                        updateRows.clear();
+
+
 
                     } catch (SQLException ex) {
                         JOptionPane.showMessageDialog(null, "修改失败");
                         ex.printStackTrace();
+                        updateRows.clear();
                     }
 
                 }
-
+                JOptionPane.showMessageDialog(null, "修改成功");
+                updateRows.clear();
 
             }
 
