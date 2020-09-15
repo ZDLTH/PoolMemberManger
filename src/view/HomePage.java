@@ -20,7 +20,7 @@ public class HomePage extends JFrame{
     private int height = 677;
 
 
-    ImageIcon bg = new ImageIcon("src/img/bg-homepage.jpg");
+    ImageIcon bg = new ImageIcon(this.getClass().getClassLoader().getResource("img/bg-homepage.jpg"));
 
     int buttonDefaultWidth = (int) (width*0.2);
     int buttonDefaultHeight= (int) (height*0.05);

@@ -216,8 +216,8 @@ class AddConsume extends JPanel{
     JButton addOrderButton = new JButton("添加");
 
 
-    ImageIcon addBtnIcon = new ImageIcon("src/img/addBtn.jpg");
-    ImageIcon reduceBtnIcon = new ImageIcon("src/img/reduceBtn.jpg");
+    ImageIcon addBtnIcon = new ImageIcon(this.getClass().getClassLoader().getResource("img/addBtn.jpg"));
+    ImageIcon reduceBtnIcon = new ImageIcon(this.getClass().getClassLoader().getResource("img/reduceBtn.jpg"));
 
 
     JLabel touristRemind = new JLabel("当前是游客",SwingConstants.CENTER);
